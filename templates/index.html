@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-{% include 'includes/head.html'  with title='Home' %}
+{% extends 'layout.html' %}
 
-<body>
-{% include 'includes/navbar.html' %}
+{% block content %}
 
-<div class="container">
+
+
+
     <div class="row">
         <div class="Resume App">
             <h1>Hello World</h1>
@@ -23,10 +22,10 @@
         </div>
     </div>
 
-</div>
-</body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-</html>
+{% endblock %}
+
+{% block extra_scripts %}
+        <script> console.log("hello word")</script>
+{% endblock %}
+```
